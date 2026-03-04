@@ -1,0 +1,36 @@
+.grid-container{
+    display: grid;
+       grid-template-rows :repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    border: 2px solid black;
+   grid-template-areas: 
+   "gi1-alias gi1-alias gi3-alias"
+   " gi2-alias   .        gi3-alias"
+   ".             .        gi3-alias"
+   ; 
+    height: 450px;
+}
+.grid-item{
+    display:flex;
+    
+}
+.gi-1{
+    grid-area: gi1-alias;
+    background-color: aqua;
+    animation-name: fede-in ;
+    animation-duration: 5s;
+}
+.gi-2{
+    grid-area: gi2-alias;
+      background-color: rgb(94, 139, 139);
+}
+.gi-3{
+    grid-area: gi3-alias;
+    background-color: rgb(24, 34, 34);
+}
+@keyframes fade-in{
+    0% {background-color: brown;}
+    25% {background-color: blue;}
+    50% {background-color: blueviolet;}
+    100% {background-color: peru;}
+}

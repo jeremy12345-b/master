@@ -1,0 +1,55 @@
+/*shared css*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Crimson Pro", serif;
+  font-size: 18px;
+}
+/* css outer grid styles*/
+.outer-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 70px 1fr;
+  grid-template-columns: 90px 1fr;
+  grid-template-areas:
+    " alias-header alias-header"
+    "alias-innergrid alias-innergrid";
+}
+
+.outer-grid-expanded {
+  grid-template-areas:
+    " alias-header alias-header"
+    "alias-nav alias-innergrid";
+}
+
+.hide-nav {
+  display: none;
+}
+
+header {
+  display: flex;
+  grid-area: alias-header;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(60, 60, 60),
+    rgb(120, 120, 120),
+    rgb(210, 210, 210)
+  );
+}
+nav {
+  grid-area: alias-nav;
+  background-image: linear-gradient(to bottom, rgb(60, 60, 60));
+  height: ;
+  width: ;
+}
+.inner-grid {
+  grid-area: alias-innergrid;
+  background-image: linear-gradient(
+    to bottom,
+
+    rgb(210, 210, 210)
+  );
+}

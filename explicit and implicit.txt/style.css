@@ -1,0 +1,57 @@
+/*grouped styling*/
+.grid-container{
+    display:grid;
+    grid-template-rows :1fr;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+    height: 450px;
+    column-gap: 10px;
+    grid-auto-rows: minmax(50px, auto);
+    grid-auto-columns: minmax(50px, auto);
+}
+.grid-item{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    margin:1px  ;
+    height: auto;
+    
+}
+html{
+   
+}
+body{
+    border:5px solid black;
+}
+
+/*personal styling*/
+.gi-1{
+       background-color: aquamarine;
+}
+.gi-2{
+    background-color: blue;
+}
+.g1-3{
+    background-color: brown;
+}
+.g1-4{
+    background-color: violet;
+}
+.g1-5{
+    background-color: wheat;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    width: 100px;
+
+}
+.g1-6{
+    background-color: wheat;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    width: 100px;
+
+}
