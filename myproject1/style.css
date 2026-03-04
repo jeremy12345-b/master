@@ -42,8 +42,8 @@ header {
 nav {
   grid-area: alias-nav;
   background-image: linear-gradient(to bottom, rgb(60, 60, 60));
-  height: ;
-  width: ;
+  height: 100;
+  width: 100;
 }
 .inner-grid {
   grid-area: alias-innergrid;
