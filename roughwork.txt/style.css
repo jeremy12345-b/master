@@ -1,10 +1,10 @@
-.animations{
- animation-name:slide-in;
- animation-duration: 5s;  
- border-radius: 15px;
- border: 2px solid black;
+.animations {
+  animation-name: slide-in;
+  animation-duration: 5s;
+  border-radius: 15px;
+  border: 2px solid black;
 }
-@keyframes slide-in{
+@keyframes slide-in {
   0% {
     translate: 70vw 0;
     scale: 20% 10%;
@@ -12,10 +12,10 @@
   }
 
   50% {
-    translate: 50vw 0; 
+    translate: 50vw 0;
     background-color: rgb(78, 85, 85);
   }
- /* 70% {
+  /* 70% {
     translate: 30vw 0;
     scale: 20% 10%;
       display: none;
@@ -30,40 +30,42 @@
 .animations:hover{
     background-color: beige;
 transition-property: margin-right;*/
- 
-  
 }
-.index1{
+.index1 {
   z-index: 1;
   height: 3 0px;
-  width:100px;
+  width: 100px;
   border: solid black;
- position: absolute;
- animation-name:slide-in;
- animation-duration: 5s;  
- border-radius: 15px;
- border: 2px solid black;
- display:flex;
- margin-top: 120px;
- margin-left: 800px;
+  position: absolute;
+  animation-name: slide-in;
+  animation-duration: 5s;
+  border-radius: 15px;
+  border: 2px solid black;
+  display: flex;
+  margin-top: 120px;
+  margin-left: 800px;
 }
-.index2{
- position: absolute;
+.index2 {
+  position: absolute;
   z-index: -1;
-   background-image: linear-gradient(to bottom, rgb(60,60,60), rgb(120,120,120), rgb(210,210,210) );
-  width:1350px ;
-  height:150px ;
-  opacity: 3px; 
+  background-image: linear-gradient(
+    to bottom,
+    rgb(60, 60, 60),
+    rgb(120, 120, 120),
+    rgb(210, 210, 210)
+  );
+  width: 1350px;
+  height: 150px;
+  opacity: 3px;
 }
-.index3{
+.index3 {
   position: absolute;
   border: 1px;
   z-index: 3;
-  width:auto;
-  height:auto ;
-   align-items: center;
-    justify-content:center; 
-    margin-left: 30px;
-     margin-top: 30px;
-
+  width: auto;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  margin-top: 30px;
 }
